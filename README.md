@@ -1,2 +1,3 @@
 # Graduation web
-uploaded webpage for graduation from PUN
+Uploaded webpage for graduation from PNU
+Do not upload modules which is for this page.
