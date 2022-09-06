@@ -11,6 +11,9 @@ const app = express();
 app.set("views", "./src/views");
 app.set("view engine", "ejs");
 
+// 자바스크립트와 뷰(ejs) 연결하기위한 과정
+app.use(express.static(`${__dirname}/src/public`));
+
 
 // 예를들어 '/'라는 요청 받을시 응답으로 "여기는 루트입니다."를 보냄
 // 즉, html 문서를 문자처리해서 res.send 안에 넣어도 무방(탭위에)
