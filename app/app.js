@@ -4,12 +4,16 @@
 // express(모듈)로 서버 열기 http://localhost:3000/
 
 const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
 
 
 // 앱 세팅 (프론트, 지정파일에 있는 ejs프론트 연결)
 app.set("views", "./src/views");
 app.set("view engine", "ejs");
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 
 // 자바스크립트와 뷰(ejs) 연결하기위한 과정
 app.use(express.static(`${__dirname}/src/public`));
