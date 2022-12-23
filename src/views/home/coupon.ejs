@@ -1,0 +1,67 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/home/coupon.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <p class="logo">Coupon</p>
+        <div class="middle">
+            <% if(session.cookie.usercoupon == "0"){ %>
+                <img class="pic" src="/images/coupon0.png" width="300px" height="250px">
+            <% } %>
+
+            <% if(session.cookie.usercoupon == "1"){ %>
+                <img class="pic" src="/images/coupon1.png" width="300px" height="250px">
+            <% } %>
+
+            <% if(session.cookie.usercoupon == "2"){ %>
+                <img class="pic" src="/images/coupon2.png" width="300px" height="250px">
+            <% } %>
+
+            <% if(session.cookie.usercoupon == "3"){ %>
+                <img class="pic" src="/images/coupon3.png" width="300px" height="250px">
+            <% } %>
+
+            <% if(session.cookie.usercoupon == "4"){ %>
+                <img class="pic" src="/images/coupon4.png" width="300px" height="250px">
+            <% } %>
+
+            <% if(session.cookie.usercoupon == "5"){ %>
+                <img class="pic" src="/images/coupon5.png" width="300px" height="250px">
+            <% } %>
+
+            <% if(session.cookie.usercoupon == "6"){ %>
+                <img class="pic" src="/images/coupon6.png" width="300px" height="250px">
+            <% } %>
+
+            <% if(session.cookie.usercoupon == "7"){ %>
+                <img class="pic" src="/images/coupon7.png" width="300px" height="250px">
+            <% } %>
+
+            <% if(session.cookie.usercoupon == "8"){ %>
+                <img class="pic" src="/images/coupon8.png" width="300px" height="250px">
+            <% } %>
+
+            <% if(session.cookie.usercoupon == "9"){ %>
+                <img class="pic" src="/images/coupon9.png" width="300px" height="250px">
+            <% } %>
+        </div>
+        <h3>쿠폰 모두 모을시 만원 할인</h3>
+        <h3>쿠폰 사용은 결제시 말해주세요</h3>
+        <h3>티켓 수 : <%= session.cookie.ticket %></h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <a href="/success" class="button">뒤로</a>
+    </div>
+</body>
+</html>

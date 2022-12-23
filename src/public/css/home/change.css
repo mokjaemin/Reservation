@@ -1,0 +1,53 @@
+.main {
+    /* background-color: blue; */
+    place-items: center;
+    max-width: 360px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    text-align: center;
+}
+.form{
+    place-items: center;
+    text-align: center;
+    height: 100px;
+}
+.top{
+    font-size: 50px;
+}
+.tag{
+    font-size: 25px;
+}
+
+.name{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+}
+.id{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+}
+.pw{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+}
+.number{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+}
+.button{
+    position: relative;
+    color: white;
+    background-color: black;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border: 3px solid black;
+}
+
+.button:hover,.button:active,.button:focus {
+    background: gray;
+}

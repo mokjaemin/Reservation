@@ -1,0 +1,148 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/home/order.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/home/order.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main">
+        <div clase="middle">
+            <br>
+            <br>
+            <h1 class="logo">예약관리 및 주문</h1>
+            <br>
+            <br>
+            <br>
+            <% if(info.day1 != ""){ %>
+                <button class="showbutton" id="showday1"><%= info.day1[0].res_date %></button>
+                <br>
+                <br>
+                <div class="bowl" id="bowl1" style="display:none;">
+                    <br>
+                    <br>
+                    <% for(var i=0; i < info.day1.length; i++){ %>
+                        <% if(info.day1[i].pay == 0){ %>
+                            <br>
+                            <textarea class="content_title" readonly>주문자 정보</textarea>
+                            <textarea class="content1" readonly><%= info.day1[i].res_time %> <%= info.day1[i].res_table %> <%= info.day1[i].name %> <%= info.day1[i].id %></textarea>
+                            <textarea class="content11" readonly>주문내역</textarea>
+                            <textarea class="content11" readonly>등심 스테이크 : <%= info.day1[i].steak1 %></textarea>
+                            <textarea class="content11" readonly>안심 스테이크 : <%= info.day1[i].steak2 %></textarea>
+                            <textarea class="content11" readonly>총 금액 : <%= info.day1[i].total %></textarea>
+                            <br>
+                            <br>
+                            <p class="confirm1">주문/변경</p>
+                            <br>
+                            <p class="cancel1">예약삭제</p>
+                            <h1 class="end">--------------------------</h1>
+                        <% } %>
+                    <% } %>
+                    <button class="hidebutton" id="hideday1">숨기기</button>
+                    <br>
+                    <br>
+                </div>
+            <% } %>
+            <% if(info.day2 != ""){ %>
+                <br>
+                <button class="showbutton" id="showday2"><%= info.day2[0].res_date %></button>
+                <br>
+                <br>
+                <div class="bowl" id="bowl2" style="display:none;">
+                    <br>
+                    <br>
+                    <% for(var i=0; i < info.day2.length; i++){ %>
+                        <% if(info.day2[i].pay == 0){ %>
+                            <br>
+                            <textarea class="content_title" readonly>주문자 정보</textarea>
+                            <textarea class="content2" readonly><%= info.day2[i].res_time %> <%= info.day2[i].res_table %> <%= info.day2[i].name %> <%= info.day2[i].id %> </textarea>
+                            <textarea class="content22" readonly>주문내역</textarea>
+                            <textarea class="content22" readonly>등심 스테이크 : <%= info.day2[i].steak1 %></textarea>
+                            <textarea class="content22" readonly>안심 스테이크 : <%= info.day2[i].steak2 %></textarea>
+                            <textarea class="content22" readonly>총 금액 : <%= info.day2[i].total %></textarea>
+                            <br>
+                            <br>
+                            <p class="confirm2">주문하기</p>
+                            <br>
+                            <p class="cancel2">예약삭제</p>
+                            <h1 class="end">--------------------------</h1>    
+                        <% } %>
+                    <% } %>
+                    <button class="hidebutton" id="hideday2">숨기기</button>
+                    <br>
+                    <br>
+                </div>
+            <% } %>
+            <% if(info.day3 != ""){ %>
+                <br>
+                <button class="showbutton" id="showday3"><%= info.day3[0].res_date %></button>
+                <br>
+                <br>
+                <div class="bowl" id="bowl3" style="display:none;">
+                    <br>
+                    <br>
+                    <% for(var i=0; i < info.day3.length; i++){ %>
+                        <% if(info.day3[i].pay == 0){ %>
+                            <br>
+                            <textarea class="content_title" readonly>주문자 정보</textarea>
+                            <textarea class="content3" readonly><%= info.day3[i].res_time %> <%= info.day3[i].res_table %> <%= info.day3[i].name %> <%= info.day3[i].id %></textarea>
+                            <textarea class="content33" readonly>주문내역</textarea>
+                            <textarea class="content33" readonly>등심 스테이크 : <%= info.day3[i].steak1 %></textarea>
+                            <textarea class="content33" readonly>안심 스테이크 : <%= info.day3[i].steak2 %></textarea>
+                            <textarea class="content33" readonly>총 금액 : <%= info.day3[i].total %></textarea>
+                            <br>
+                            <br>
+                            <p class="confirm3">주문하기</p>
+                            <br>
+                            <p class="cancel3">예약삭제</p>
+                            <h1 class="end">--------------------------</h1>
+                        <% } %>
+                    <% } %>
+                    <button class="hidebutton" id="hideday3">숨기기</button>
+                    <br>
+                    <br>
+                </div>
+            <% } %>
+            <% if(info.day4 != ""){ %>
+                <br>
+                <button class="showbutton" id="showday4"><%= info.day4[0].res_date %></button>
+                <br>
+                <br>
+                <div class="bowl" id="bowl4" style="display:none;">
+                    <br>
+                    <br>
+                    <% for(var i=0; i < info.day4.length; i++){ %>
+                        <% if(info.day4[i].pay == 0){ %>
+                            <br>
+                            <textarea class="content_title" readonly>주문자 정보</textarea>
+                            <textarea class="content4" readonly><%= info.day4[i].res_time %> <%= info.day4[i].res_table %> <%= info.day4[i].name %> <%= info.day4[i].id %></textarea>
+                            <textarea class="content44" readonly>주문내역</textarea>
+                            <textarea class="content44" readonly>등심 스테이크 : <%= info.day4[i].steak1 %></textarea>
+                            <textarea class="content44" readonly>안심 스테이크 : <%= info.day4[i].steak2 %></textarea>
+                            <textarea class="content44" readonly>총 금액 : <%= info.day4[i].total %></textarea>
+                            <br>
+                            <br>
+                            <p class="confirm4">주문하기</p>
+                            <br>
+                            <p class="cancel4">예약삭제</p>
+                            <h1 class="end">--------------------------</h1>
+                        <% } %>
+                    <% } %>
+                    <button class="hidebutton" id="hideday4">숨기기</button>
+                    <br>
+                    <br>
+                </div>
+            <% } %>
+        </div>
+        <br>
+        <br>
+        <a class="back" href="/success">뒤로</a>
+    </div>
+</body>
+</html>

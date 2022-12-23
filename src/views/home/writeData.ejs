@@ -1,0 +1,38 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/home/success.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/home/writeData.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="logo">지출작성</h1>
+        <br>
+        <br>
+        <input class="dataForm" id="year" type="text" placeholder="연도(ex, 2022)"/>
+        <br>
+        <input class="dataForm" id="month" type="text" placeholder="월(ex, 8)"/>
+        <br>
+        <input class="dataForm" id="electronicFee" type="text" placeholder="전기세(숫자만 입력, 없을 시 0)"/>
+        <br>
+        <input class="dataForm" id="waterFee" type="text" placeholder="물세(숫자만 입력, 없을 시 0)"/>
+        <br>
+        <input class="dataForm" id="parttimeFee" type="text" placeholder="알바비(숫자만 입력, 없을 시 0)"/>
+        <br>
+        <input class="dataForm" id="monthFee" type="text" placeholder="월세(숫자만 입력, 없을 시 0)"/>
+        <br>
+        <br>
+        <button class="back_button" id="send">전송</button>
+        <br>
+        <form action="/profit" method="get" class="form">
+            <input type="submit" class="back_button" value="뒤로">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,338 @@
+
+
+.main {
+    display: grid;
+    place-items: center;
+}
+.logo {
+    text-align: center;
+    font-size: 50px;
+}
+.logo2 {
+    text-align: center;
+    font-size: 30px;
+}
+.button {
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    bottom: 200px;
+    position: relative;
+}
+.hidebutton{
+    line-height: 20px;
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.hidebutton:hover,.hidebutton:active,.hidebutton:focus {
+    background: gray;
+}
+.bowl{
+    display: grid;
+    width : 330px;
+    background:  #86242a;
+    place-items: center;
+    border: 2px solid black;
+    border-radius: 2em;
+}
+.title{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
+.showbutton{
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    background-color:  #86242a;
+    width: 330px;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 2em;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.showbutton:hover,.showbutton:active,.showbutton:focus {
+    background:  #86242a;
+    opacity: 0.8;
+}
+.end{
+    text-align: center;
+    font-size: 30px;
+}
+
+.content1{
+    width : 230px;
+    height: 150px;
+    color: black;
+    font-weight: bold;
+    background:  #86242a;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+}
+.content2{
+    width : 230px;
+    height: 150px;
+    color: black;
+    font-weight: bold;
+    background:  #86242a;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+}
+.content3{
+    width : 230px;
+    height: 150px;
+    color: black;
+    font-weight: bold;
+    background:  #86242a;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+}
+.content4{
+    width : 230px;
+    height: 150px;
+    color: black;
+    font-weight: bold;
+    background:  #86242a;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+.confirm1{
+    line-height: 30px;
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.confirm1:hover,.confirm1:active,.confirm1:focus {
+    background: gray;
+}
+
+.confirm2{
+    line-height: 30px;
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.confirm2:hover,.confirm2:active,.confirm2:focus {
+    background: gray;
+}
+
+.confirm3{
+    line-height: 30px;
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.confirm3:hover,.confirm3:active,.confirm3:focus {
+    background: gray;
+}
+
+.confirm4{
+    line-height: 30px;
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.confirm4:hover,.confirm4:active,.confirm4:focus {
+    background: gray;
+}
+
+.cancel1{
+    line-height: 30px;
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.cancel1:hover,.cancel1:active,.cancel1:focus {
+    background: gray;
+}
+
+.cancel2{
+    line-height: 30px;
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.cancel2:hover,.cancel2:active,.cancel2:focus {
+    background: gray;
+}
+
+.cancel3{
+    line-height: 30px;
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.cancel3:hover,.cancel3:active,.cancel3:focus {
+    background: gray;
+}
+
+.cancel4{
+    line-height: 30px;
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.cancel4:hover,.cancel4:active,.cancel4:focus {
+    background: gray;
+}
+
+.back{
+    margin: 50px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color:  black;
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 1em;
+}
+
+
+
+.content11{
+    width : 250px;
+    color: black;
+    font-weight: bold;
+    background:  #86242a;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+.content22{
+    width : 250px;
+    color: black;
+    font-weight: bold;
+    background:  #86242a;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+.content33{
+    width : 250px;
+    color: black;
+    font-weight: bold;
+    background:  #86242a;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+.content44{
+    width : 250px;
+    color: black;
+    font-weight: bold;
+    background:  #86242a;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+.content_title{
+    width : 250px;
+    height: 40px;
+    color: black;
+    font-weight: bold;
+    background:  #86242a;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+.review{
+    width : 250px;
+    height: 200px;
+    color: black;
+    font-weight: bold;
+    background:  #86242a;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+.review_title{
+    width : 250px;
+    color: black;
+    font-weight: bold;
+    background:  #86242a;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+}
+.getTime{
+    width : 250px;
+    color: black;
+    font-weight: bold;
+    background:  #86242a;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+}

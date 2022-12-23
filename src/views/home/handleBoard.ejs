@@ -1,0 +1,50 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/success.css">
+    <script src="/js/home/handleBoard.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h3 class="logo">게시판관리</h3>
+        <br>
+        <br>
+        <input type="submit" id="private" class="button" value="사장님에게">
+        <div id="bowl1" style="display: none;">
+            <form action="/handleOwner" method="get" class="form">
+                <input type="submit" id="private" class="plus_button" value="전체게시글">
+            </form>
+            <form action="/handleOwnerNoComment" method="get" class="form">
+                <input type="submit" id="private" class="plus_button" value="댓글이 없는 게시글">
+            </form>
+        </div>
+        <br>
+        <br>
+        <input type="submit" id="public" class="button" value="공개후기">
+        <div id="bowl2" style="display: none;">
+            <form action="/handlePublic" method="get" class="form">
+                <input type="submit" id="private" class="plus_button" value="전체게시글">
+            </form>
+            <form action="/handlePublicNoComment" method="get" class="form">
+                <input type="submit" id="private" class="plus_button" value="댓글이 없는 게시글">
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form action="/customer" method="get" class="form">
+            <input type="submit" class="back_button" value="뒤로">
+        </form>
+    </div>
+</body>
+</html>

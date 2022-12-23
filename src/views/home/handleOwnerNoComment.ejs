@@ -1,0 +1,61 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/toPublic.css">
+    <script src="/js/home/handleOwnerNoComment.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h3 class="logo">사장님에게</h3>
+        <br>
+        <br>
+        <div>
+            <input class="search" type="text" onkeyup="filter()" placeholder="아이디">
+        </div>
+        <br>
+        <br>
+        <% for(var i=0; i < info.length; i++){ %>
+            <div class="middle_public" id="showsearch">
+                <div id="showdown">
+                    <p>아이디</p>
+                    <textarea id="reviewTitle_public" class="id" readonly><%= info[i].id %></textarea>
+                    <div id="bowl" style="display: none;">
+                        <p>날짜</p>
+                        <textarea id="reviewRating_public" class="date" readonly><%= info[i].res_date %></textarea>
+                        <p>시간</p>
+                        <textarea id="reviewRating_public" class="time" readonly><%= info[i].res_time %></textarea>
+                        <p>테이블</p>
+                        <textarea id="reviewRating_public" class="table" readonly><%= info[i].res_table %></textarea>
+                        <p>내용</p>
+                        <textarea id="reviewContext_public" class="reviewContext" readonly><%= info[i].review %></textarea>
+                        <p>답변</p>
+                        <textarea id="reviewContext_public" class="answerContext"><%= info[i].answer %></textarea>
+                        <br>
+                        <br>
+                        <button class="back_button" id="answerbutton">답변달기</button>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <button class="back_button" id="hidebutton">숨기기</button>
+            </div>
+        <% } %>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form action="/handleBoard" method="get" class="form">
+            <input type="submit" class="back_button" value="뒤로">
+        </form>
+    </div>
+</body>
+</html>

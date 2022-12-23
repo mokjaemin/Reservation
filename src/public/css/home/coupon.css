@@ -1,0 +1,40 @@
+.pic{
+    border: 2px solid gray;
+    border-radius: 2em;
+}
+
+.logo {
+    text-align: center;
+    font-size: 50px;
+}
+.button{
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color:  black;
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 1em;
+}
+
+.button:hover,.button:active,.button:focus {
+    background:  black;
+    opacity: 0.8;
+}
+
+.main {
+    display: grid;
+    place-items: center;
+}
+.middle{
+    height: 300px;
+    margin: 0 auto 20px;
+    background-color:  #86242a;
+    display: grid;
+    place-items: center;
+    border: 5px solid black;
+    border-radius: 2em;
+}

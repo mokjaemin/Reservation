@@ -1,0 +1,32 @@
+<!-- ! + enter -> basic base -->
+
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/home/login.css">
+    <script src="/js/home/change.js" defer></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+          <form class="login-form">
+            아이디<input id= "id" type="text" value="<%= session.cookie.userid %>">
+            비밀번호<input id= "pw" type="password" value="<%= session.cookie.userpw %>">
+            이름<input id="name" value="<%= session.cookie.username %>">
+            전화번호<input id="number" value="<%= session.cookie.usernumber %>">
+            <p id="button">변경</p>
+            <br>
+          </form>
+          <a class="back" href="/success">뒤로</a>
+        </div>
+      </div>
+</body>
+</html>

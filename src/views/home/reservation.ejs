@@ -1,0 +1,75 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/success.css">
+    <script src="/js/home/reservation.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h3 class="logo">자리 선택</h3>
+        <img src="/images/table.png" width="300px" height="300px">
+        <br>
+        <form>
+            <p id="table1" type="submit" class="button" >
+                table1
+                <% if(info2.table1 == "o"){ %>
+                    : 예약됨.
+                <% } %>
+                <% if(info2.table1 != "o"){ %>
+                    : 예약가능.
+                <% } %>
+            </p>
+        </form>
+        <br>
+        <form>
+            <p id="table2" type="submit" class="button" >
+                table2
+                <% if(info2.table2 == "o"){ %>
+                    : 예약됨.
+                <% } %>
+                <% if(info2.table2 != "o"){ %>
+                    : 예약가능.
+                <% } %>
+            </p>
+        </form>
+        <br>
+        <form>
+            <p id="table3" type="submit" class="button" >
+                table3
+                <% if(info2.table3 == "o"){ %>
+                    : 예약됨.
+                <% } %>
+                <% if(info2.table3 != "o"){ %>
+                    : 예약가능.
+                <% } %>
+            </p>
+        </form>
+        <br>
+        <form>
+            <p id="table4" type="submit" class="button" >
+                table4
+                <% if(info2.table4 == "o"){ %>
+                    : 예약됨.
+                <% } %>
+                <% if(info2.table4 != "o"){ %>
+                    : 예약가능.
+                <% } %>
+            </p>
+        </form>
+        <br>
+        <br>
+        <form action="/time" method="get" class="form">
+            <input type="submit" class="back_button" value="뒤로">
+        </form>
+    </div> 
+</body>
+
+
+
+</html>

@@ -1,0 +1,56 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/home/handleInformation.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/home/handleInformation.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="middle">
+            <br>
+            <br>
+            <h1 class="logo">고객정보</h1>
+            <br>
+            <br>
+            <div>
+                <input class="search" type="text" onkeyup="filter()" placeholder="아이디 또는 이름 또는 전화번호">
+            </div>
+            <br>
+            <br>
+            <% for(var i=1; i < info.length; i++){ %>
+                <button class="showbutton" id="showday">아이디 : <%=info[i].id %></button>
+                <div class="bowl" id="bowl" style="display: none;">
+                    <br>
+                    <br>
+                    <% if(info[i].blacklist == 1){ %>
+                        <textarea class="id" readonly>💀 블랙리스트 💀</textarea>
+                        <textarea class="id" readonly>사유 : <%= info[i].reason %></textarea>
+                        <br>
+                        <br>
+                    <% } %>
+                    <textarea class="id" id="id" readonly>아아디 : <%= info[i].id %></textarea>
+                    <textarea class="content" id = "name" readonly>이름 : <%= info[i].name %></textarea>
+                    <textarea class="content" readonly>쿠폰 : <%= info[i].coupon %></textarea>
+                    <textarea class="content" readonly>방문횟수 : <%= info[i].visit %></textarea>
+                    <textarea class="number" id="number" readonly>번호 : <%= info[i].number %></textarea>
+                    <br>
+                    <br>
+                    <button class="reviewbutton" id="blackbutton">블랙등록</button>
+                    <br>
+                    <button class="hidebutton" id="hideday">숨기기</button>
+                    <br>
+                    <br>
+                </div>
+            <% } %>
+            <br>
+        </div>
+        <a class="back" href="/customer">뒤로</a>
+    </div>
+</body>
+</html>
