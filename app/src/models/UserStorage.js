@@ -480,6 +480,7 @@ class UserStorage{
             });
         });
     }
+    
 
     static async writeData(userInfo){
         return new Promise((resolve, reject) => {
