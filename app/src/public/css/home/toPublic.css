@@ -1,0 +1,172 @@
+.main {
+    place-items: center;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    font-size: 50px;
+}
+
+.back_button {
+    color: white;
+    font-weight: bold;
+    background-color:  black;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 2em;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.back_button:hover,.back_button:active,.back_button:focus {
+    background:  black;
+    opacity: 0.8;
+}
+
+.hidebutton {
+    color: white;
+    font-weight: bold;
+    background-color:  black;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 2em;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.hidebutton:hover,.hidebutton:active,.hidebutton:focus {
+    background:  black;
+    opacity: 0.8;
+}
+
+
+
+.middle{
+    place-items: center;
+    z-index: 1;
+    max-width: 200px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    background-color:  #86242a;
+    border: 2px solid black;
+    border-radius: 2em;
+}
+
+#reviewTitle{
+    text-align: center;
+    font-weight: bold;
+    width: 173px;
+    border-radius: 1em;
+    font-size: 18px;
+}
+
+#reviewContext{
+    text-align: center;
+    font-weight: bold;
+    width: 173px;
+    height: 180px;
+    font-size: 20px;
+    border-radius: 1em;
+}
+
+#reviewTitle_public{
+    text-align: center;
+    font-weight: bold;
+    width: 190px;
+    border-radius: 1em;
+    font-size: 20px;
+}
+
+#reviewContext_public{
+    text-align: center;
+    font-weight: bold;
+    width: 190px;
+    font-size: 20px;
+    border-radius: 1em;
+    height: 190px;
+}
+
+
+#reviewRating_public{
+    text-align: center;
+    font-weight: bold;
+    width: 190px;
+    font-size: 20px;
+    border-radius: 1em;
+}
+
+
+#myform input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 yellow; /* 마우스 클릭 체크 */
+}
+#myform fieldset legend{
+    text-align: left;
+}
+#myform fieldset{
+    display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
+    direction: rtl; /* 이모지 순서 반전 */
+    border: 0; /* 필드셋 테두리 제거 */
+}
+#myform label:hover{
+    text-shadow: 0 0 0 yellow; /* 마우스 호버 */
+}
+#myform label:hover ~ label{
+    text-shadow: 0 0 0 yellow; /* 마우스 호버 뒤에오는 이모지들 */
+}
+#myform fieldset{
+    display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
+    border: 0; /* 필드셋 테두리 제거 */
+}
+#myform input[type=radio]{
+    display: none; /* 라디오박스 감춤 */
+}
+#myform label{
+    font-size: 1.5em; /* 이모지 크기 */
+    color: transparent; /* 기존 이모지 컬러 제거 */
+    text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
+}
+
+
+.middle_public{
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 1;
+    max-width: 220px;
+    margin: 0 auto 30px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    background-color:  #86242a;
+    border: 2px solid black;
+    border-radius: 2em;
+}
+.middle_public:hover,.middle_public:active,.middle_public:focus {
+    background-color:  #86242a;
+    opacity: 0.8;
+}
+
+.search {
+    border-radius: 2em;
+    height: 50px;
+    width: 330px;
+    text-align: center;
+    font-size: 20px;
+}

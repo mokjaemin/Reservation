@@ -5,6 +5,8 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
+const cookie = require("cookie-parser");
+const session = require('express-session');
 const app = express();
 
 
@@ -12,8 +14,20 @@ const app = express();
 app.set("views", "./src/views");
 app.set("view engine", "ejs");
 
+
+app.use(express.static('./src/views'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(cookie());
+app.use(session({
+    key: 'sid',
+    secret: 'secret',
+    resave: false,
+    saveUninitialized: true,
+    cookie: {
+        maxAge: 24000 * 60 * 60 // 쿠키 유효기간 24시간
+    }
+}));
 
 // 자바스크립트와 뷰(ejs) 연결하기위한 과정
 app.use(express.static(`${__dirname}/src/public`));
@@ -30,4 +44,12 @@ app.use("/", home); // use -> 미들웨어를 등록해주는 메소드
 
 // 내보내기 
 module.exports = app;
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,42 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/toPublic.css">
+    <script src="/js/home/writePublicReview.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h3 class="logo">후기작성</h3>
+        <br>
+        <br>
+        <div class="middle">
+            <form name="myform" id="myform">
+                <fieldset>
+                    <input type="radio" class="rating" name="rating" value="5" id="rate1"><label for="rate1">⭐</label>
+                    <input type="radio" class="rating" name="rating" value="4" id="rate2"><label for="rate2">⭐</label>
+                    <input type="radio" class="rating" name="rating" value="3" id="rate3"><label for="rate3">⭐</label>
+                    <input type="radio" class="rating" name="rating" value="2" id="rate4"><label for="rate4">⭐</label>
+                    <input type="radio" class="rating" name="rating" value="1" id="rate5"><label for="rate5">⭐</label>
+                </fieldset>
+            </form>
+            <br>
+            <p>제목</p>
+            <textarea id="reviewTitle" class="reivewTitle"></textarea>
+            <p>내용</p>
+            <textarea id="reviewContext" class="reviewContext"></textarea>
+        </div>
+        <button class="back_button" id="reviewbutton">제출</button>
+        <br>
+        <br>
+        <form action="/toPublic" method="get" class="form">
+            <input type="submit" class="back_button" value="뒤로">
+        </form>
+    </div>
+</body>
+</html>

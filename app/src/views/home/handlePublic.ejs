@@ -1,0 +1,54 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/toPublic.css">
+    <script src="/js/home/handlePublic.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h3 class="logo">공개게시판</h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <% for(var i=0; i < info.length; i++){ %>
+            <div class="middle_public">
+                <div id="showdown">
+                    <p>제목</p>
+                    <textarea id="reviewTitle_public" class="reviewTitle" readonly><%= info[i].title %></textarea>
+                    <div id="bowl" style="display: none;">
+                        <p>내용</p>
+                        <textarea id="reviewContext_public" class="reviewContext" readonly><%= info[i].review %></textarea>
+                        <p>별점</p>
+                        <textarea id="reviewRating_public" class="reviewContext" readonly><%= info[i].rating %>점</textarea>
+                        <p>답변</p>
+                        <textarea id="reviewContext_public" class="answerContext"><%= info[i].answer %></textarea>
+                        <br>
+                        <br>
+                        <button class="back_button" id="answerbutton">답변달기</button>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <button class="back_button" id="hidebutton">숨기기</button>
+            </div>
+        <% } %>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form action="/handleBoard" method="get" class="form">
+            <input type="submit" class="back_button" value="뒤로">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/writeReview.css">
+    <script src="/js/home/writeReview.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h3 class="logo">사장님에게</h3>
+        <br>
+        <div class="middle">
+            <br>
+            <br>
+            <textarea class="content" id="date" readonly>날짜 : <%= info.date %></textarea>
+            <textarea class="content" id="time" readonly>시간 : <%= info.time %></textarea>
+            <textarea class="content" id="table" readonly>테이블 : <%= info.table %></textarea>
+            <textarea class="content">요청사항</textarea>
+            <textarea class="review" id="review"></textarea>
+            <br>
+            <br>
+            <br>
+            <input type="submit" class="review_button" id="submit" value="작성">
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form action="/toOwner" method="get" class="form">
+            <input type="submit" class="back_button" value="뒤로">
+        </form>
+    </div>
+</body>
+</html>

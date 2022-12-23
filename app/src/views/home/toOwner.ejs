@@ -1,0 +1,56 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/toOwner.css">
+    <script src="/js/home/toOwner.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div clase="middle">
+            <br>
+            <br>
+            <h1 class="logo">사장님에게</h1>
+            <br>
+            <br>
+            <br>
+            <% for(var i=0; i < response.length; i++){ %>
+                <button class="showbutton" id="showday"><%= i+1 %>번째 방문</button>
+                <br>
+                <br>
+                <div class="bowl" id="bowl" style="display: none;">
+                    <br>
+                    <br>
+                    <textarea class="content" id="date" readonly>날짜 : <%= response[i].res_date %></textarea>
+                    <textarea class="content" id="time" readonly>시간 : <%= response[i].res_time %></textarea>
+                    <textarea class="content" id="table" readonly>테이블 : <%= response[i].res_table %></textarea>
+                    <textarea class="content" readonly>등심 : <%= response[i].steak1 %></textarea>
+                    <textarea class="content" readonly>안심 : <%= response[i].steak2 %></textarea>
+                    <textarea class="content" readonly>금액 : <%= response[i].total %></textarea>
+                    <h1>-------------------</h1>
+                    <textarea class="content" readonly>사장님에게</textarea>
+                    <textarea class="review_content" readonly><%= response[i].review %></textarea>
+                    <textarea class="content" readonly>답변</textarea>
+                    <textarea class="review_content" readonly><%= response[i].answer %></textarea>
+                    <br>
+                    <br>
+                    <button class="reviewbutton" id="reviewbutton">후기 작성</button>
+                    <br>
+                    <button class="hidebutton" id="hideday">숨기기</button>
+                    <br>
+                    <br>
+                </div>
+                <br>
+            <% } %>
+        </div>
+        <br>
+        <br>
+        <a class="back" href="/board">뒤로</a>
+    </div>
+</body>
+</html>

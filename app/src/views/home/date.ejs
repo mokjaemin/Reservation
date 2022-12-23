@@ -1,0 +1,43 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/success.css">
+    <script src="/js/home/date.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h3 class="logo">날짜 선택</h3>
+        <form>
+            <p id="date1" type="submit" class="button" value="10월22일"><%= session.cookie.reservation_date1 %></p>
+        </form>
+        <br>
+        <form>
+            <p id="date2" type="submit" class="button" value="10월22일"><%= session.cookie.reservation_date2 %></p>
+        </form>
+        <br>
+        <form>
+            <p id="date3" type="submit" class="button" value="10월22일"><%= session.cookie.reservation_date3 %></p>
+        </form>
+        <br>
+        <form>
+            <p id="date4" type="submit" class="button" value="10월22일"><%= session.cookie.reservation_date4 %></p>
+        </form>
+        <br>
+        <br>
+        <br>
+        <form action="/success" method="get" class="form">
+            <input type="submit" class="back_button" value="뒤로">
+        </form>
+        
+    </div> 
+</body>
+
+
+
+</html>

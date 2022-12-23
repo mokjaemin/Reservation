@@ -1,0 +1,56 @@
+.main {
+    padding-top: 120px;
+    display: grid;
+    place-items: center;
+}
+
+.main_store {
+    padding-top: 120px;
+    display: grid;
+    place-items: center;
+}
+
+.logo {
+    text-align: center;
+    font-size: 50px;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+    background-color: #86242a;
+    width: 90px;
+    height: 55px;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 2em;
+    text-align: center;
+    line-height: 55px;
+}
+
+.button:hover,.button:active,.button:focus {
+    background: #86242a;
+    opacity: 0.8;
+}
+
+.button_store {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+    background-color: #86242a;
+    width: 200px;
+    height: 55px;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 2em;
+    text-align: center;
+    line-height: 55px;
+}
+
+.button_store:hover,.button_store:active,.button_store:focus {
+    background: #86242a;
+    opacity: 0.8;
+}

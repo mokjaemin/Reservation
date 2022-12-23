@@ -1,0 +1,46 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/home/success.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/home/selectStore.js" defer></script>
+    <!-- <meta http-equiv="refresh" content="1.5;url=/login"> -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="logo">가게선택</h1>
+        <p class="name">
+            <%= info.username %>님
+        </p>
+        <div>
+            <input class="search" type="text" onkeyup="filter()" placeholder="이름 또는 지역">
+        </div>
+        <div class="storename">
+            <form action="/success" method="get" class="form">
+                <input type="submit" class="button" value="Steak House">
+            </form>
+        </div>
+        <div class="storename">
+            <form action="/selectStore" method="get" class="form">
+                <input type="submit" class="button" value="Sample">
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form action="/contact" method="get" class="form">
+            <input type="submit" class="button2" value="가게등록">
+        </form>
+        <form action="/login" method="get" class="form">
+            <input type="submit" class="button2" value="로그아웃">
+        </form>
+    </div>
+</body>
+</html>

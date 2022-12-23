@@ -8,13 +8,15 @@ const pw = document.querySelector("#pw");
 const loginBtn = document.querySelector("#button"); // 얘는 태그 자체로 불러왔음.
 
 
-loginBtn.addEventListener("click", login);
 
+loginBtn.addEventListener("click", login);
 function login(){
+
     const req = {
         id: id.value,
         pw: pw.value,
     };
+    
     
     // 요청이 전달되는 경로와 형식
     fetch("/login", {
@@ -27,10 +29,10 @@ function login(){
     .then((res) => res.json())
     .then((res) => {
         if(res.success){
-            location.href = "/"
+            location.href = "/selectStore"
         }
         else{
-            alert(res.msg);
+            alert("로그인 실패");
         }
     })
     .catch((err) => {

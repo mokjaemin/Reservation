@@ -1,0 +1,75 @@
+<!-- ! + enter -> basic base -->
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/success.css">
+    <title>Document</title>
+</head>
+
+<% if(session.cookie.userid == "bamer"){ %>
+    <body>
+        <div class="main">
+            <h3 class="logo">화이팅입니다</h3>
+            <p class="name">
+                <%= session.cookie.username %> 사장님
+            </p>
+            <form action="/ownerReservation" method="get" class="form">
+                <input type="submit" class="button" value="예약관리">
+            </form>
+            <form action="/customer" method="get" class="form">
+                <input type="submit" class="button" value="고객관리">
+            </form>
+            <form action="/ai" method="get" class="form">
+                <input type="submit" class="button" value="AI분석">
+            </form>
+            <br>
+            <br>
+            <form action="/selectStore" method="get" class="form">
+                <input type="submit" class="button" value="뒤로">
+            </form>
+        </div> 
+    </body>
+<% } %>
+
+<% if(session.cookie.userid !== "bamer"){ %>
+    <body>
+        <div class="main">
+            <h3 class="logo">환영합니다</h3>
+            <p class="name">
+                <%= session.cookie.username %>님
+            </p>
+            <form action="/date" method="get" class="form">
+                <input type="submit" class="button" value="자리예약">
+            </form>
+            <form action="/menu" method="get" class="form">
+                <input type="submit" class="button" value="메뉴">
+            </form>
+            <form action="/order" method="get" class="form">
+                <input type="submit" class="button" value="예약관리 및 주문">
+            </form>
+            <form action="/coupon" method="get" class="form">
+                <input type="submit" class="button" value="쿠폰">
+            </form>
+            <form action="/board" method="get" class="form">
+                <input type="submit" class="button" value="게시판">
+            </form>
+            <form action="/change" method="get" class="form">
+                <input type="submit" class="button" value="회원정보 수정">
+            </form>
+            <br>
+            <br>
+            <form action="/selectStore" method="get" class="form">
+                <input type="submit" class="button" value="뒤로">
+            </form>
+            
+        </div> 
+    </body>
+<% } %>
+
+
+</html>

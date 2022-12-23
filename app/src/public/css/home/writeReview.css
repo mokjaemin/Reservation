@@ -1,0 +1,74 @@
+.main {
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    font-size: 50px;
+}
+.back_button {
+    color: white;
+    font-weight: bold;
+    background-color:  black;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 2em;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.review_button {
+    color: white;
+    font-weight: bold;
+    background-color:  black;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 2em;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.content{
+    background:  #86242a;
+    width : 250px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+}
+.middle{
+    background:  #86242a;
+    height: 650px;
+    border: 2px solid black;
+    border-radius: 3em;
+}
+.review{
+    background:  #ad444a;
+    width : 200px;
+    height: 170px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+}
+.back_button:hover,.back_button:active,.back_button:focus{
+    background:  black;
+    opacity: 0.8;
+}
+.review_button:hover,.review_button:active,.review_button:focus{
+    background:  black;
+    opacity: 0.8;
+}

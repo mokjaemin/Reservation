@@ -6,7 +6,7 @@
 
 "use strict";
 const app = require("../app"); // app.js 불러오기
-const PORT = 3000;
+const PORT = 80;
 
 app.listen(PORT, ()=>{
     console.log("서버가동");
