@@ -342,6 +342,14 @@ class User {
             return {success : false, msg : err};
         }
     }
+    async profitMonth(){
+        try{
+            const response = await UserStorage.profitMonth();
+            return response;
+        } catch (err) {
+            return {success : false, msg : err};
+        }
+    }
 }
 
 module.exports = User;

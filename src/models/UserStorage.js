@@ -493,6 +493,18 @@ class UserStorage{
             });
         });
     }
+
+    static profitMonth(){
+        return new Promise((resolve, reject) => {
+            const query = "SELECT * FROM profitMonth"
+            db.query(query, (err, data)=>{
+                if(err)
+                    reject(`${err}`);
+                resolve(data);
+            });
+        });
+    }
+    
 };
 
 module.exports = UserStorage;

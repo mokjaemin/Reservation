@@ -455,84 +455,34 @@ const output = {
     },
     profit: async (req, res)=>{
         const user = new User();
-        const data = await user.getReservationByMonth();
+        const response = await user.profitMonth();
 
-        var month1 = []
-        var month1_total = 0
-        var month2 = []
-        var month2_total = 0
-        var month3 = []
-        var month3_total = 0
-        var month4 = []
-        var month4_total = 0
-        var month5 = []
-        var month5_total = 0
-        var month6 = []
-        var month6_total = 0
-        var month7 = []
-        var month7_total = 0
-        var month8 = []
-        var month8_total = 0
-        var month9 = []
-        var month9_total = 0
-        var month10 = []
-        var month10_total = 0
-        var month11 = []
-        var month11_total = 0
-        var month12 = []
-        var month12_total = 0
+        var month = []
+        var year = []
+        var total = []
+        var electronicFee = []
+        var waterFee = []
+        var monthFee = []
+        var partjobFee = []
 
-        for(var i=0; i<data.length; i++){
-            if(data[i].res_date.slice(0,1) == 1){
-                month1.push(data[i]) // 총데이터
-                month1_total += parseInt(data[i].total) // 총수입
-            }
-            if(data[i].res_date.slice(0,1) == 2){
-                month2.push(data[i])
-                month2_total += parseInt(data[i].total)
-            }
-            if(data[i].res_date.slice(0,1) == 3){
-                month3.push(data[i])
-                month3_total += parseInt(data[i].total)
-            }
-            if(data[i].res_date.slice(0,1) == 4){
-                month4.push(data[i])
-                month4_total += parseInt(data[i].total)
-            }
-            if(data[i].res_date.slice(0,1) == 5){
-                month5.push(data[i])
-                month5_total += parseInt(data[i].total)
-            }
-            if(data[i].res_date.slice(0,1) == 6){
-                month6.push(data[i])
-                month6_total += parseInt(data[i].total)
-            }
-            if(data[i].res_date.slice(0,1) == 7){
-                month7.push(data[i])
-                month7_total += parseInt(data[i].total)
-            }
-            if(data[i].res_date.slice(0,1) == 8){
-                month8.push(data[i])
-                month8_total += parseInt(data[i].total)
-            }
-            if(data[i].res_date.slice(0,1) == 9){
-                month9.push(data[i])
-                month9_total += parseInt(data[i].total)
-            }
-            if(data[i].res_date.slice(0,2) == 10){
-                month10.push(data[i])
-                month10_total += parseInt(data[i].total)
-            }
-            if(data[i].res_date.slice(0,2) == 11){
-                month11.push(data[i])
-                month11_total += parseInt(data[i].total)
-            }
-            if(data[i].res_date.slice(0,2) == 12){
-                month12.push(data[i])
-                month12_total += parseInt(data[i].total)
-            }
+        for(var i=0; i<response.length; i++){
+            month[i] = response[i].month
+            year[i] = response[i].year
+            total[i] = response[i].total
+            electronicFee[i] = response[i].electronicFee
+            waterFee[i] = response[i].waterFee
+            monthFee[i] = response[i].monthFee
+            partjobFee[i] = response[i].partjobFee
         }
-        const result = spawn('python3', ['src//public/python/home/profit_month.py', month12_total, "수익"]);
+
+
+        const result = spawn('python3', ['src//public/python/home/profit_month.py', month, year, total, electronicFee, waterFee, monthFee, partjobFee]);
+        result.stdout.on('data', function(data) {
+            console.log(data.toString());
+        });
+        result.stderr.on('data', function(data) {
+            console.log(data.toString());
+        });
         res.render("home/profit")
     },
     profitMonth: async (req, res)=>{

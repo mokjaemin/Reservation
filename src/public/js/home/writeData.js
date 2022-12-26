@@ -14,12 +14,12 @@ sendBtn.addEventListener("click", send);
 function send(){
     if(year.value.length != 4){return alert("연도의 형식이 올바르지 않습니다.")}
     if(month.value.length != 1 && month.value.length != 2){return alert("월의 형식이 올바르지 않습니다.")}
-    if(!Number(year.value)){return alert("연도 입력시 숫자만 가능합니다.")}
-    if(!Number(month.value)){return alert("월 입력시 숫자만 가능합니다.")}
-    if(!Number(electronic.value)){return alert("전기세 입력시 숫자만 가능합니다.") }
-    if(!Number(parttime.value)){return alert("알바비 입력시 숫자만 가능합니다.")}
-    if(!Number(water.value)){return alert("물세 입력시 숫자만 가능합니다.")}
-    if(!Number(monthFee.value)){return alert("물세 입력시 숫자만 가능합니다.")}
+    if(isNaN(year.value)){return alert("연도 입력시 숫자만 가능합니다.")}
+    if(isNaN(month.value)){return alert("월 입력시 숫자만 가능합니다.")}
+    if(isNaN(electronic.value)){return alert("전기세 입력시 숫자만 가능합니다.") }
+    if(isNaN(parttime.value)){return alert("알바비 입력시 숫자만 가능합니다.")}
+    if(isNaN(water.value)){return alert("물세 입력시 숫자만 가능합니다.")}
+    if(isNaN(monthFee.value)){return alert("월세 입력시 숫자만 가능합니다.")}
     const req = {
         year : year.value,
         month : month.value,
