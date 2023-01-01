@@ -11,6 +11,14 @@
     align-items: center;
 }
 
+.select{
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.data{
+    padding: 5px 10px;
+}
 .logo {
     text-align: center;
     font-size: 50px;
