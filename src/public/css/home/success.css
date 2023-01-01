@@ -15,10 +15,30 @@
     text-align: center;
     margin: 10px 10px;
 }
-
-.data{
+.year_data{
+    align-items: center;
     padding: 5px 10px;
+    background-color:  #86242a;
+    color: white;
+    border-radius: 2em;
 }
+.year_data:hover{
+    background:  black;
+    opacity: 0.8;
+}
+.data{
+    align-items: center;
+    padding: 5px 10px;
+    background-color:  #86242a;
+    color: white;
+    border-radius: 2em;
+}
+
+.data:hover{
+    background:  black;
+    opacity: 0.8;
+}
+
 .logo {
     text-align: center;
     font-size: 50px;
