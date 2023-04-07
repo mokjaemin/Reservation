@@ -9,4 +9,4 @@ This Project is for making web reservation restaurant server with NODE.js
 - BASIC : MVC Pattern, SingleTon Pattern
 - DB API : Using Queries in Code like MyBatis Framework
 - DB : AWS Mysql
-- FRONT : HTML, CSS, JS
+- FRONT-END : HTML, CSS, JS
