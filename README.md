@@ -1,4 +1,4 @@
-# Reservation
+# Reservation Web
 This Project is for making web reservation restaurant server with NODE.js
 
 - BASIC : MVC Pattern, Singleton Pattern
