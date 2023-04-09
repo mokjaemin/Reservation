@@ -20,5 +20,5 @@ Folder Description
 - src/models : Service files and DB API file for connecting DB by using Queries in code.
 - src/public : CSS/JS Files for FRONT-END
 - src/routes : Customizing Server with app.js and router with Express.js
-- src/views : Dynamic HTML files
+- src/views : Dynamic HTML files (ejs)
 - app.js : server Setting
