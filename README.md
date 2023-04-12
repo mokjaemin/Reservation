@@ -11,7 +11,7 @@ Skills
 - BASIC : MVC Pattern, SingleTon Pattern
 - DB API : Using Queries in Code like MyBatis Framework
 - DB : AWS Mysql
-- FRONT-END : HTML, CSS, JS
+- FRONT-END : HTML(EJS), CSS, JS
 
 
 
