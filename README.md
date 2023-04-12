@@ -5,8 +5,8 @@ This Project is for making web reservation restaurant server with NODE.js
 
 Skills
 - SEVER : app.js
-- LANGUAGE : Node.js
-- FRAMEWORK : Express.js
+- LANGUAGE : JS
+- FRAMEWORK : Node.js, Express.js
 - CLENT API : HTTP Request/Response
 - BASIC : MVC Pattern, SingleTon Pattern
 - DB API : Using Queries in Code like MyBatis Framework
