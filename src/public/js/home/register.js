@@ -21,7 +21,7 @@ function register(){
     if (!confirmpw.value) return alert("비밀번호 확인을 입력해주세요.");
     if (pw.value !== confirmpw.value) return alert("비밀번호가 일치하지 않습니다.");
     if (!number.value) return alert("전화번호 확인을 입력해주세요.");
-    if (!confirmnumber.value) return alert("전화번호 인증을 해주세요.");
+
 
     const req = {
         id: id.value,
@@ -29,6 +29,7 @@ function register(){
         pw: pw.value,
         number: number.value
     };
+
     
     
     // 요청이 전달되는 경로와 형식

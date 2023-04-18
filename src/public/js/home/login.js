@@ -17,8 +17,6 @@ function login(){
         pw: pw.value,
     };
     
-    
-    // 요청이 전달되는 경로와 형식
     fetch("/login", {
         method: "POST",
         headers: {
