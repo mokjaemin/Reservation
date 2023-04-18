@@ -1,4 +1,4 @@
-# Reservation Web with NODE.js
+# Reservation Web Project with NODE.js
 This Project is for making web reservation restaurant server with NODE.js
 
 
